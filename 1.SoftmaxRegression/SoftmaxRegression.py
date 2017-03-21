@@ -3,7 +3,7 @@
 from tensorflow.examples.tutorials.mnist import input_data
 
 # 加载mnist数据，如果没有，则会自动下载，需要一会
-mnist = input_data.read_data_sets("data/",one_hot = True)
+mnist = input_data.read_data_sets("../Mnist_data",one_hot = True)
 print (mnist.train.images.shape,mnist.train.labels.shape)
 print (mnist.test.images.shape,mnist.test.labels.shape)
 print (mnist.validation.images.shape,mnist.validation.labels.shape)
